@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U1g2_CarSearchController"
+            prefHeight="500.0" prefWidth="700.0">
+    <children>
+        <Label layoutX="40.0" layoutY="30.0" text="Location" />
+        <TextField fx:id="locationTF" layoutX="140.0" layoutY="26.0" />
+
+        <Label layoutX="40.0" layoutY="70.0" text="Start Date" />
+        <DatePicker fx:id="startDateDP" layoutX="140.0" layoutY="66.0" />
+
+        <Label layoutX="40.0" layoutY="110.0" text="End Date" />
+        <DatePicker fx:id="endDateDP" layoutX="140.0" layoutY="106.0" />
+
+        <Button layoutX="140.0" layoutY="150.0" mnemonicParsing="false" onAction="#searchButtonOnAction" text="Search Available Cars" />
+
+        <TableView fx:id="carTableView" layoutX="40.0" layoutY="200.0" prefHeight="220.0" prefWidth="620.0">
+            <columns>
+                <TableColumn fx:id="idTC" prefWidth="120.0" text="Vehicle ID" />
+                <TableColumn fx:id="modelTC" prefWidth="180.0" text="Model" />
+                <TableColumn fx:id="statusTC" prefWidth="140.0" text="Status" />
+                <TableColumn fx:id="rateTC" prefWidth="150.0" text="Daily Rate" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="40.0" layoutY="440.0" mnemonicParsing="false" onAction="#bookButtonOnAction" text="Book Selected Car" />
+    </children>
+</AnchorPane>

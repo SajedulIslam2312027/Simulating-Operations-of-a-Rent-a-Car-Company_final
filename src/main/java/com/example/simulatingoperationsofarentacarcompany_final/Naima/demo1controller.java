@@ -6,8 +6,5 @@ public class demo1controller
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
-    public
-    void onAction(ActionEvent actionEvent) {
-    }
+
 }
