@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U1g5_BookingManageController"
+            prefHeight="450.0" prefWidth="650.0">
+    <children>
+        <TableView fx:id="bookingTableView" layoutX="30.0" layoutY="30.0" prefHeight="220.0" prefWidth="590.0">
+            <columns>
+                <TableColumn fx:id="bookingIdTC" prefWidth="130.0" text="Booking ID" />
+                <TableColumn fx:id="carTC" prefWidth="150.0" text="Car" />
+                <TableColumn fx:id="dateTC" prefWidth="150.0" text="Date" />
+                <TableColumn fx:id="statusTC" prefWidth="150.0" text="Status" />
+            </columns>
+        </TableView>
+
+        <Label layoutX="30.0" layoutY="270.0" text="New Date" />
+        <DatePicker fx:id="newDateDP" layoutX="130.0" layoutY="266.0" />
+
+        <Button layoutX="30.0" layoutY="310.0" mnemonicParsing="false" onAction="#editBookingButtonOnAction" text="Edit Booking" />
+        <Button layoutX="180.0" layoutY="310.0" mnemonicParsing="false" onAction="#cancelBookingButtonOnAction" text="Cancel Booking" />
+    </children>
+</AnchorPane>

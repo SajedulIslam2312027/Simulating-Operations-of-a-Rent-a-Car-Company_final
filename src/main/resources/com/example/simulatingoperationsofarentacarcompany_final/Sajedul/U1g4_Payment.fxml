@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U1g4_PaymentController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="40.0" layoutY="30.0" text="Payment Method" />
+        <ComboBox fx:id="methodCB" layoutX="180.0" layoutY="26.0" prefWidth="180.0" />
+
+        <Label layoutX="40.0" layoutY="70.0" text="Card Number" />
+        <TextField fx:id="cardNumberTF" layoutX="180.0" layoutY="66.0" />
+
+        <Label layoutX="40.0" layoutY="110.0" text="Expiry Date" />
+        <TextField fx:id="expiryTF" layoutX="180.0" layoutY="106.0" />
+
+        <Label layoutX="40.0" layoutY="150.0" text="CVV" />
+        <TextField fx:id="cvvTF" layoutX="180.0" layoutY="146.0" />
+
+        <Button layoutX="180.0" layoutY="190.0" mnemonicParsing="false" onAction="#payButtonOnAction" text="Pay Now" />
+    </children>
+</AnchorPane>

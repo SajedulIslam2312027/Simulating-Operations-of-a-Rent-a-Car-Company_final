@@ -5,40 +5,28 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class U1g2_CarSearchController {
+public class U1g7_RentalHistoryController {
 
     @javafx.fxml.FXML
-    private TextField locationTF;
+    private TableColumn amountTC;
     @javafx.fxml.FXML
-    private DatePicker endDateDP;
+    private TableColumn carTC;
     @javafx.fxml.FXML
-    private TableView carTableView;
+    private TableColumn bookingIdTC;
     @javafx.fxml.FXML
-    private TableColumn statusTC;
+    private TableColumn dateTC;
     @javafx.fxml.FXML
-    private TableColumn modelTC;
-    @javafx.fxml.FXML
-    private TableColumn rateTC;
-    @javafx.fxml.FXML
-    private TableColumn idTC;
-    @javafx.fxml.FXML
-    private DatePicker startDateDP;
+    private TableView historyTableView;
 
     @javafx.fxml.FXML
-    public void searchButtonOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void bookButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g3_CarBooking.fxml"));
+    public void downloadInvoiceButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g8_ReviewSubmit.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         nextStage.setTitle("Rent A Car");

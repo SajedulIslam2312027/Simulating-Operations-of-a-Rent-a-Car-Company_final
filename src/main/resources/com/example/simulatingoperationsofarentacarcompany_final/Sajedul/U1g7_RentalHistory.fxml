@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U1g7_RentalHistoryController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TableView fx:id="historyTableView" layoutX="30.0" layoutY="30.0" prefHeight="300.0" prefWidth="590.0">
+            <columns>
+                <TableColumn fx:id="bookingIdTC" prefWidth="130.0" text="Booking ID" />
+                <TableColumn fx:id="carTC" prefWidth="150.0" text="Car" />
+                <TableColumn fx:id="dateTC" prefWidth="150.0" text="Date" />
+                <TableColumn fx:id="amountTC" prefWidth="150.0" text="Amount" />
+            </columns>
+        </TableView>
+
+        <Button layoutX="30.0" layoutY="350.0" mnemonicParsing="false" onAction="#downloadInvoiceButtonOnAction" text="Download Invoice" />
+    </children>
+</AnchorPane>

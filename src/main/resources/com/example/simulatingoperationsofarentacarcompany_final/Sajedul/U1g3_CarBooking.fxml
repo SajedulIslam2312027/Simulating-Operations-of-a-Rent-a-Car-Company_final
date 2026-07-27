@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U1g3_CarBookingController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="40.0" layoutY="30.0" text="Pickup Branch" />
+        <ComboBox fx:id="pickupBranchCB" layoutX="180.0" layoutY="26.0" prefWidth="180.0" />
+
+        <Label layoutX="40.0" layoutY="70.0" text="Drop Branch" />
+        <ComboBox fx:id="dropBranchCB" layoutX="180.0" layoutY="66.0" prefWidth="180.0" />
+
+        <Label layoutX="40.0" layoutY="120.0" text="Add-ons" />
+        <CheckBox fx:id="gpsCB" layoutX="180.0" layoutY="118.0" text="GPS" />
+        <CheckBox fx:id="insuranceCB" layoutX="260.0" layoutY="118.0" text="Insurance" />
+        <CheckBox fx:id="childSeatCB" layoutX="360.0" layoutY="118.0" text="Child Seat" />
+
+        <Label layoutX="40.0" layoutY="170.0" text="Total Cost" />
+        <TextArea fx:id="totalCostTA" editable="false" layoutX="180.0" layoutY="166.0" prefHeight="40.0" prefWidth="180.0" />
+
+        <Button layoutX="180.0" layoutY="230.0" mnemonicParsing="false" onAction="#confirmBookingButtonOnAction" text="Confirm Booking" />
+    </children>
+</AnchorPane>

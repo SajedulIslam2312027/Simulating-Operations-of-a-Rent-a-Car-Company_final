@@ -8,37 +8,40 @@ import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class U1g2_CarSearchController {
+public class U1g5_BookingManageController {
 
     @javafx.fxml.FXML
-    private TextField locationTF;
+    private DatePicker newDateDP;
     @javafx.fxml.FXML
-    private DatePicker endDateDP;
+    private TableColumn carTC;
     @javafx.fxml.FXML
-    private TableView carTableView;
+    private TableView bookingTableView;
     @javafx.fxml.FXML
     private TableColumn statusTC;
     @javafx.fxml.FXML
-    private TableColumn modelTC;
+    private TableColumn bookingIdTC;
     @javafx.fxml.FXML
-    private TableColumn rateTC;
-    @javafx.fxml.FXML
-    private TableColumn idTC;
-    @javafx.fxml.FXML
-    private DatePicker startDateDP;
+    private TableColumn dateTC;
 
     @javafx.fxml.FXML
-    public void searchButtonOnAction(ActionEvent actionEvent) {
+    public void editBookingButtonOnAction(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g6_RoadsideAssistance.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("Rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
     }
 
     @javafx.fxml.FXML
-    public void bookButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g3_CarBooking.fxml"));
+    public void cancelBookingButtonOnAction(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g6_RoadsideAssistance.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         nextStage.setTitle("Rent A Car");
