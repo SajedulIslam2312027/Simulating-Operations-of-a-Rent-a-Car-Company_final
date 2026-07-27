@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U2g2_MaintenanceSchedulerController"
+            prefHeight="400.0" prefWidth="500.0">
+    <children>
+        <Label layoutX="40.0" layoutY="30.0" text="Vehicle ID" />
+        <TextField fx:id="vehicleIdTF" layoutX="180.0" layoutY="26.0" />
+
+        <Label layoutX="40.0" layoutY="70.0" text="Maintenance Type" />
+        <ComboBox fx:id="typeCB" layoutX="180.0" layoutY="66.0" prefWidth="180.0" />
+
+        <Label layoutX="40.0" layoutY="110.0" text="Service Date" />
+        <DatePicker fx:id="serviceDateDP" layoutX="180.0" layoutY="106.0" />
+
+        <Button layoutX="180.0" layoutY="160.0" mnemonicParsing="false" onAction="#scheduleButtonOnAction" text="Schedule Maintenance" />
+    </children>
+</AnchorPane>
