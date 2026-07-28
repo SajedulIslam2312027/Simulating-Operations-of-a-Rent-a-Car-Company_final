@@ -8,7 +8,6 @@ module com.example.simulatingoperationsofarentacarcompany_final.simulatingoperat
     opens com.example.simulatingoperationsofarentacarcompany_final.Sajedul to javafx.fxml;
     exports com.example.simulatingoperationsofarentacarcompany_final.Sajedul;
 
-    opens com.example.simulatingoperationsofarentacarcompany_final.Naima to javafx.fxml;
     exports com.example.simulatingoperationsofarentacarcompany_final.Naima;
 
     opens com.example.simulatingoperationsofarentacarcompany_final.zedni to javafx.fxml;
