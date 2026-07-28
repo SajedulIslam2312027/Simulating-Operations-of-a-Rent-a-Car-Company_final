@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.zedni.U6g4_ExpiryManageController">
+    <children>
+        <TableView fx:id="expiryTableView" layoutX="30.0" layoutY="30.0" prefHeight="250.0" prefWidth="590.0">
+            <columns>
+                <TableColumn fx:id="partNameTC" prefWidth="200.0" text="Part Name" />
+                <TableColumn fx:id="expiryDateTC" prefWidth="180.0" text="Expiry Date" />
+                <TableColumn fx:id="flagTC" prefWidth="180.0" text="Flag" />
+            </columns>
+        </TableView>
+        <Label layoutX="30.0" layoutY="300.0" text="Disposal Quantity" />
+        <TextField fx:id="disposalQtyTF" layoutX="180.0" layoutY="296.0" />
+        <Button layoutX="30.0" layoutY="340.0" mnemonicParsing="false" onAction="#confirmDisposalButtonOnAction" text="Confirm Disposal" />
+    </children>
+</AnchorPane>

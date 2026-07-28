@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.zedni.U6g8_PhysicalAuditController">
+    <children>
+        <TableView fx:id="auditTableView" layoutX="30.0" layoutY="30.0" prefHeight="250.0" prefWidth="590.0">
+            <columns>
+                <TableColumn fx:id="partNameTC" prefWidth="200.0" text="Part Name" />
+                <TableColumn fx:id="expectedCountTC" prefWidth="180.0" text="Expected Count" />
+                <TableColumn fx:id="actualCountTC" prefWidth="180.0" text="Actual Count" />
+            </columns>
+        </TableView>
+        <Button layoutX="30.0" layoutY="300.0" mnemonicParsing="false" onAction="#submitAuditButtonOnAction" text="Submit Audit" />
+    </children>
+</AnchorPane>

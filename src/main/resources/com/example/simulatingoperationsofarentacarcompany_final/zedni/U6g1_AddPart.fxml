@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.zedni.U6g1_AddPartController">
+    <children>
+        <Label layoutX="40.0" layoutY="30.0" text="Part Name" />
+        <TextField fx:id="nameTF" layoutX="180.0" layoutY="26.0" />
+        <Label layoutX="40.0" layoutY="70.0" text="Part Code" />
+        <TextField fx:id="codeTF" layoutX="180.0" layoutY="66.0" />
+        <Label layoutX="40.0" layoutY="110.0" text="Category" />
+        <ComboBox fx:id="categoryCB" layoutX="180.0" layoutY="106.0" prefWidth="180.0" />
+        <Label layoutX="40.0" layoutY="150.0" text="Unit Price" />
+        <TextField fx:id="priceTF" layoutX="180.0" layoutY="146.0" />
+        <Label layoutX="40.0" layoutY="190.0" text="Quantity Received" />
+        <TextField fx:id="quantityTF" layoutX="180.0" layoutY="186.0" />
+        <Button layoutX="180.0" layoutY="240.0" mnemonicParsing="false" onAction="#addPartButtonOnAction" text="Add Part" />
+    </children>
+</AnchorPane>
