@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U2g4_FleetTrackingController">
+    <children>
+        <Label layoutX="30.0" layoutY="30.0" text="Select Vehicle" />
+        <ComboBox fx:id="vehicleCB" layoutX="150.0" layoutY="26.0" prefWidth="180.0" />
+
+        <Button layoutX="350.0" layoutY="26.0" mnemonicParsing="false" onAction="#trackButtonOnAction" text="Track Location" />
+
+        <TableView fx:id="locationTableView" layoutX="30.0" layoutY="80.0" prefHeight="250.0" prefWidth="540.0">
+            <columns>
+                <TableColumn fx:id="vehicleIdTC" prefWidth="162.0" text="Vehicle ID" />
+                <TableColumn fx:id="latitudeTC" prefWidth="205.0" text="Latitude" />
+                <TableColumn fx:id="longitudeTC" prefWidth="172.0" text="Longitude" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
