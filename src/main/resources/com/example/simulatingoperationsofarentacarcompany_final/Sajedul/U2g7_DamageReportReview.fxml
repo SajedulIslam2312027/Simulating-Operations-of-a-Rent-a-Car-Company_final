@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U2g7_DamageReportReviewController">
+    <children>
+        <TableView fx:id="damageTableView" layoutX="30.0" layoutY="30.0" prefHeight="250.0" prefWidth="590.0">
+            <columns>
+                <TableColumn fx:id="reportIdTC" prefWidth="146.0" text="Report ID" />
+                <TableColumn fx:id="vehicleIdTC" prefWidth="141.0" text="Vehicle ID" />
+                <TableColumn fx:id="severityTC" prefWidth="141.0" text="Severity" />
+                <TableColumn fx:id="statusTC" prefWidth="161.0" text="Status" />
+            </columns>
+        </TableView>
+
+        <ComboBox fx:id="newStatusCB" layoutX="30.0" layoutY="300.0" prefWidth="180.0" />
+        <Button layoutX="230.0" layoutY="300.0" mnemonicParsing="false" onAction="#updateReportStatusButtonOnAction" text="Update Status" />
+    </children>
+</AnchorPane>
