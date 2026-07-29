@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.U2g8_VehicleRetireController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Label layoutX="40.0" layoutY="30.0" text="Vehicle ID" />
+        <TextField fx:id="vehicleIdTF" layoutX="180.0" layoutY="26.0" />
+
+        <Label layoutX="40.0" layoutY="70.0" text="Odometer Reading" />
+        <TextField fx:id="odometerTF" layoutX="180.0" layoutY="66.0" />
+
+        <Label layoutX="40.0" layoutY="110.0" text="Reason" />
+        <TextArea fx:id="reasonTA" layoutX="180.0" layoutY="106.0" prefHeight="70.0" prefWidth="220.0" />
+
+        <Button layoutX="180.0" layoutY="200.0" mnemonicParsing="false" onAction="#retireVehicleButtonOnAction" text="Retire Vehicle" />
+    </children>
+</AnchorPane>
