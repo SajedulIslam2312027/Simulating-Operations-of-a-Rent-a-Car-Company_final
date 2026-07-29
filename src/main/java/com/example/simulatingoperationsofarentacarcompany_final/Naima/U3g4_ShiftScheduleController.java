@@ -1,5 +1,6 @@
 package com.example.simulatingoperationsofarentacarcompany_final.Naima;
 
+import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -29,16 +30,11 @@ public class U3g4_ShiftScheduleController {
         System.out.println(" Schedule checked .");
     }
     @javafx.fxml.FXML
-    public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
-        try{
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("U3_RentalAgentDashboard.fxml"));
-            Parent root = loader.load();
-            Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            currentStage.setScene(new Scene(root));
-            currentStage.show();
+    public void backButtonOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("Naima/U3g3_ValidatePromo.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(loader.load()));
+        stage.show();
         }
-        catch (IOException e) {
-            System.out.println("Error Loading back scene: " + e.getMessage());
-        }
-    }
 }
+

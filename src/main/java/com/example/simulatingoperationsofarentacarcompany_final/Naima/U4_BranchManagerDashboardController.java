@@ -33,5 +33,6 @@ public class U4_BranchManagerDashboardController {
     }
 
     public void logoutButtonOnAction(ActionEvent event) {
+
     }
 }

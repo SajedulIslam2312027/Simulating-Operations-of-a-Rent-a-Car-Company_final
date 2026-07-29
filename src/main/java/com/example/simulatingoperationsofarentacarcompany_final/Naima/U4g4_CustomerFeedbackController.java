@@ -6,18 +6,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class U4g2_ShiftScheduleController {
-    public ComboBox staffCB;
-    public TextField startTimeTF;
-    public TextField endTimeTF;
+public class U4g4_CustomerFeedbackController {
     @javafx.fxml.FXML
-    public void assignShiftButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g3_DiscountApproval.fxml"));
+    public void nextButtonOnAction(ActionEvent actionEvent) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g5_LeaveApproval.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         nextStage.setTitle("rent A Car");
@@ -25,11 +22,10 @@ public class U4g2_ShiftScheduleController {
         nextStage.show();
     }
     @javafx.fxml.FXML
-    public void backButtonOnAction(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g1_PerformanceDashboard.fxml"));
+    public void backButtonOnAction(ActionEvent event)throws IOException {
+        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g3_DiscountApproval.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(loader.load()));
         stage.show();
     }
 }
-

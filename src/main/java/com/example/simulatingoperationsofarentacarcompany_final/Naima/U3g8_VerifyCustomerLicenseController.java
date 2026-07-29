@@ -1,5 +1,6 @@
 package com.example.simulatingoperationsofarentacarcompany_final.Naima;
 
+import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -24,12 +25,10 @@ public class U3g8_VerifyCustomerLicenseController {
         System.out.println(" License Verified.");
     }
     @javafx.fxml.FXML
-    public void backButtonOnAction(ActionEvent actionEvent) throws IOException {
-        Parent dashboardRoot = FXMLLoader.load(getClass().getResource("U3_RentalAgentDashboard.fxml"));
-        Scene scene = new Scene(dashboardRoot);
-        EventObject event = null;
+    public void backButtonOnAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("Naima/U3g7_RecordLateFee.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
+        stage.setScene(new Scene(loader.load()));
         stage.show();
     }
 }

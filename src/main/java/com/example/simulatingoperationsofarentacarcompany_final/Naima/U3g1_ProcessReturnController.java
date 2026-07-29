@@ -6,7 +6,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
-public class U3g1_ProcessReturnController{
+public class U3g1_ProcessReturnController {
     @javafx.fxml.FXML
     private TextField rentalIdTF;
     @javafx.fxml.FXML

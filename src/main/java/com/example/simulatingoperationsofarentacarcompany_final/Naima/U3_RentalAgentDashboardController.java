@@ -10,9 +10,7 @@ import java.io.IOException;
 
 public class U3_RentalAgentDashboardController {
     @javafx.fxml.FXML
-    public BorderPane dashboardBorderPane;
-    @FXML
-    private Label statusLable;
+    public BorderPane dashboardBorderPane;;
 
     @javafx.fxml.FXML
     public void processReturnOnAction(ActionEvent actionEvent) throws IOException{
@@ -60,11 +58,5 @@ public class U3_RentalAgentDashboardController {
                             dashboardBorderPane.setCenter(fxmlLoader.load());
     }
 
-    public Label getStatusLable() {
-        return statusLable;
-    }
 
-    public Label setStatusLable() {
-        return statusLable;
-    }
 }
