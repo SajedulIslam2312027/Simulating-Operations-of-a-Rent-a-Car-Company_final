@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller ="com.example.simulatingoperationsofarentacarcompany_final.Naima.U3g5_InspectVehicleConditionController" >
+   <children>
+      <Label alignment="CENTER" layoutX="156.0" layoutY="27.0" prefHeight="30.0" prefWidth="288.0" text="Inspect Vehicle Condition">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="vehicleRegistrationTF" layoutX="14.0" layoutY="78.0" promptText="Vehicle Registration No" />
+      <ComboBox fx:id="overallStatusComboBox" layoutX="414.0" layoutY="78.0" prefHeight="26.0" prefWidth="167.0" promptText="Overall Physical Status" />
+      <TextArea fx:id="inspectionNotesTextArea" layoutX="186.0" layoutY="91.0" prefHeight="200.0" prefWidth="200.0" promptText="Enter Inspection Notes" />
+      <Button layoutX="399.0" layoutY="324.0" mnemonicParsing="false" onAction="#submitInspectionReportOnAction" prefHeight="26.0" prefWidth="150.0" text="Submit Report" />
+      <Button layoutX="63.0" layoutY="325.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="26.0" prefWidth="62.0" text="Back" />
+   </children>
+</AnchorPane>

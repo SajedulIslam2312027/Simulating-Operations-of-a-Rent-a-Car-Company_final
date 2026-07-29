@@ -10,9 +10,10 @@ import java.io.IOException;
 
 public class U3_RentalAgentDashboardController {
     @javafx.fxml.FXML
-    public Label statuslable;
-    @javafx.fxml.FXML
     public BorderPane dashboardBorderPane;
+    @FXML
+    private Label statusLable;
+
     @javafx.fxml.FXML
     public void processReturnOnAction(ActionEvent actionEvent) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("U3g1_ProcessReturn.fxml"));
@@ -60,10 +61,10 @@ public class U3_RentalAgentDashboardController {
     }
 
     public Label getStatusLable() {
-        return statuslable;
+        return statusLable;
     }
 
     public Label setStatusLable() {
-        return statuslable;
+        return statusLable;
     }
 }

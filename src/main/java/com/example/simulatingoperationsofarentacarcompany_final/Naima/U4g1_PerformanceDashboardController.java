@@ -1,0 +1,30 @@
+package com.example.simulatingoperationsofarentacarcompany_final.Naima;
+
+import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+import java.util.EventObject;
+
+public class U4g1_PerformanceDashboardController {
+    @javafx.fxml.FXML
+    private ComboBox periodCB;
+    @javafx.fxml.FXML
+    private TextArea performanceIndicatorTextArea;
+    @javafx.fxml.FXML
+    public void exportDashboardButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g2_ShiftSchedule.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
+    }
+}
