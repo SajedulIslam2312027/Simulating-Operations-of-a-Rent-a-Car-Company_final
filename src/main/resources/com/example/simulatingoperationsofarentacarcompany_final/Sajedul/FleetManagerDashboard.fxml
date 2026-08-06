@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="fleetBorderpane" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Sajedul.FleetManagerDashboardController">
+    <left>
+        <VBox prefHeight="550.0" prefWidth="170.0" style="-fx-background-color: LIGHTBLUE;" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addVehicleButtonOnAction" prefWidth="170.0" text="Add Vehicle" textFill="#363434" />
+                <Button mnemonicParsing="false" onAction="#maintenanceButtonOnAction" prefWidth="170.0" text="Schedule Maintenance" />
+                <Button mnemonicParsing="false" onAction="#statusButtonOnAction" prefWidth="170.0" text="Update Status" />
+                <Button mnemonicParsing="false" onAction="#trackingButtonOnAction" prefWidth="170.0" text="Fleet Tracking" />
+                <Button mnemonicParsing="false" onAction="#reportButtonOnAction" prefWidth="170.0" text="Utilisation Report" />
+                <Button mnemonicParsing="false" onAction="#fuelLogButtonOnAction" prefWidth="170.0" text="Fuel Log" />
+                <Button mnemonicParsing="false" onAction="#damageButtonOnAction" prefWidth="170.0" text="Damage Report" />
+                <Button mnemonicParsing="false" onAction="#retireButtonOnAction" prefWidth="170.0" text="Retire Vehicle" />
+                <Button mnemonicParsing="false" onAction="#backButtonOnAction" prefWidth="170.0" text="Back to Dashboard" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane BorderPane.alignment="CENTER" />
+    </center>
+</BorderPane>
