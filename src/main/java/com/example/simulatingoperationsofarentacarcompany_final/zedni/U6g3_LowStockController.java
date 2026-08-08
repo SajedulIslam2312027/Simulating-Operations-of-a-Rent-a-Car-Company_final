@@ -2,21 +2,23 @@ package com.example.simulatingoperationsofarentacarcompany_final.zedni;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-import java.io.IOException;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TableView;
 
 public class U6g3_LowStockController {
+    @FXML private TableView<?> lowStockTableView;
 
     @FXML
-    public void raiseOrderButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("U6g4_ExpiryManage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        nextStage.setTitle("Rent A Car");
-        nextStage.setScene(scene);
-        nextStage.show();
+    public void raiseOrderButtonOnAction(ActionEvent actionEvent) {
+        if (lowStockTableView.getSelectionModel().getSelectedItem() == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Please select a part to reorder.");
+            alert.show();
+            return;
+        }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("Reorder raised successfully.");
+        alert.show();
     }
 }

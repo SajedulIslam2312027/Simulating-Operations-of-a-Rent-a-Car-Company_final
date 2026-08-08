@@ -5,64 +5,30 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="dashboardBorderPane"
-            prefHeight="550.0"
-            prefWidth="750.0"
-            xmlns="http://javafx.com/javafx/21"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.simulatingoperationsofarentacarcompany_final.zedni.MaintenanceTechnicianDashboardController">
+<BorderPane fx:id="dashboardBorderPane" prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.zedni.MaintenanceTechnicianDashboardController">
 
     <left>
-        <VBox prefWidth="180.0"
-              spacing="5"
-              style="-fx-background-color: lightgray;">
+        <VBox prefWidth="180.0" spacing="5" style="-fx-background-color: purple;">
 
             <children>
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Assigned Tasks"
-                        onAction="#assignedTasksOnAction"/>
+                <Button mnemonicParsing="false" onAction="#assignedTasksOnAction" prefWidth="180.0" text="Assigned Tasks" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Job Status Update"
-                        onAction="#jobStatusUpdateOnAction"/>
+                <Button mnemonicParsing="false" onAction="#jobStatusUpdateOnAction" prefWidth="180.0" text="Job Status Update" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Cleaning Report"
-                        onAction="#cleaningReportOnAction"/>
+                <Button mnemonicParsing="false" onAction="#cleaningReportOnAction" prefWidth="180.0" text="Cleaning Report" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Parts Request"
-                        onAction="#partsRequestOnAction"/>
+                <Button mnemonicParsing="false" onAction="#partsRequestOnAction" prefWidth="180.0" text="Parts Request" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Inspection"
-                        onAction="#inspectionOnAction"/>
+                <Button mnemonicParsing="false" onAction="#inspectionOnAction" prefWidth="180.0" text="Inspection" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Maintenance History"
-                        onAction="#maintenanceHistoryOnAction"/>
+                <Button mnemonicParsing="false" onAction="#maintenanceHistoryOnAction" prefWidth="180.0" text="Maintenance History" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Flag Unfit"
-                        onAction="#flagUnfitOnAction"/>
+                <Button mnemonicParsing="false" onAction="#flagUnfitOnAction" prefWidth="180.0" text="Flag Unfit" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Daily Summary"
-                        onAction="#dailySummaryOnAction"/>
+                <Button mnemonicParsing="false" onAction="#dailySummaryOnAction" prefWidth="180.0" text="Daily Summary" />
 
-                <Button mnemonicParsing="false"
-                        prefWidth="180.0"
-                        text="Logout"
-                        onAction="#logoutButtonOnAction"/>
+                <Button mnemonicParsing="false" onAction="#logoutButtonOnAction" prefWidth="180.0" text="Logout" />
 
             </children>
 
@@ -70,7 +36,7 @@
     </left>
 
     <center>
-        <AnchorPane BorderPane.alignment="CENTER"/>
+        <AnchorPane BorderPane.alignment="CENTER" />
     </center>
 
 </BorderPane>
