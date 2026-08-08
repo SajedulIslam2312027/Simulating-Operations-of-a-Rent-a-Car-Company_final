@@ -21,6 +21,7 @@ public class U3g7_RecordLateFeeController {
     private TextField feeAmountTF;
     @javafx.fxml.FXML
     public void recordFeeOnAction(ActionEvent actionEvent) {
+
         System.out.println("Late fee recorded.");
     }
     @javafx.fxml.FXML

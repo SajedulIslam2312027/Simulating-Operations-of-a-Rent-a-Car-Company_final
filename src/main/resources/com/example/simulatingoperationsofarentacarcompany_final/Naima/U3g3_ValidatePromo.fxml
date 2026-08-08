@@ -16,6 +16,7 @@
       </Label>
       <TextField fx:id="promoCodeTF" layoutX="100.0" layoutY="100.0" promptText="Enter Promo Code" />
       <TextField fx:id="originalAmountTF" layoutX="290.0" layoutY="100.0" promptText="Enter Original Ammount" />
+      <Label fx:id="discountedAmountLabel" layoutX="190.0" layoutY="220.0" text="Updated Amount:" />
       <Button layoutX="190.0" layoutY="180.0" mnemonicParsing="false" onAction="#validatePromoOnAction" text="Validate Promo" />
       <Button layoutX="65.0" layoutY="265.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>

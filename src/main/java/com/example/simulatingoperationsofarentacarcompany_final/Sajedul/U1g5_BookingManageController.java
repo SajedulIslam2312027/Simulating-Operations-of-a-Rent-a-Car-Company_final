@@ -1,53 +1,51 @@
 package com.example.simulatingoperationsofarentacarcompany_final.Sajedul;
 
+import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Alert;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class U1g5_BookingManageController {
 
     @javafx.fxml.FXML
-    private TableView bookingTableView;
-    @javafx.fxml.FXML
-    private TableColumn bookingIdTC;
+    private DatePicker newDateDP;
     @javafx.fxml.FXML
     private TableColumn carTC;
     @javafx.fxml.FXML
-    private TableColumn dateTC;
+    private TableView bookingTableView;
     @javafx.fxml.FXML
     private TableColumn statusTC;
     @javafx.fxml.FXML
-    private DatePicker newDateDP;
+    private TableColumn bookingIdTC;
+    @javafx.fxml.FXML
+    private TableColumn dateTC;
 
     @javafx.fxml.FXML
-    public void editBookingButtonOnAction(ActionEvent actionEvent) {
+    public void editBookingButtonOnAction(ActionEvent actionEvent) throws IOException {
 
-        if (bookingTableView.getSelectionModel().getSelectedItem() == null || newDateDP.getValue() == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Please select a booking and choose a new date.");
-            alert.show();
-            return;
-        }
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Booking date updated to " + newDateDP.getValue() + ".");
-        alert.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g6_RoadsideAssistance.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("Rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
     }
 
     @javafx.fxml.FXML
-    public void cancelBookingButtonOnAction(ActionEvent actionEvent) {
+    public void cancelBookingButtonOnAction(ActionEvent actionEvent) throws IOException {
 
-        if (bookingTableView.getSelectionModel().getSelectedItem() == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Please select a booking to cancel.");
-            alert.show();
-            return;
-        }
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Booking cancelled.");
-        alert.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g6_RoadsideAssistance.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("Rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
     }
 }

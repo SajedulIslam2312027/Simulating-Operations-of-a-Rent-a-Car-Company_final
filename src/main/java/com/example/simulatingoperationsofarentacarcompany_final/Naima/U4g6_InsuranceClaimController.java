@@ -5,11 +5,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class U4g6_InsuranceClaimController {
+    @javafx.fxml.FXML
+    private ComboBox selectClaimCB;
+    @javafx.fxml.FXML
+    private TextArea claimDetailsTA;
+
     @javafx.fxml.FXML
     public void approveClaimOnAction(ActionEvent actionEvent) throws IOException {
         goNext(actionEvent);

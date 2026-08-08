@@ -6,15 +6,14 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g6_InsuranceClaimController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="287.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g6_InsuranceClaimController">
    <children>
-      <Label alignment="CENTER" layoutX="30.0" layoutY="39.0" prefHeight="18.0" prefWidth="86.0" text="Select Claim" />
-      <ComboBox fx:id="selectClaimCB" layoutX="224.0" layoutY="35.0" prefWidth="150.0" />
-      <Label alignment="CENTER" layoutX="26.0" layoutY="107.0" prefHeight="18.0" prefWidth="94.0" text="Claim Details" />
-      <TextArea fx:id="claimDetailsTA" layoutX="158.0" layoutY="100.0" prefHeight="58.0" prefWidth="258.0" />
-      <Button layoutX="65.0" layoutY="200.0" mnemonicParsing="false" onAction="#approveClaimOnAction" prefHeight="26.0" prefWidth="120.0" text="Approve Claim" />
-      <Button layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onAction="#rejectClaimOnAction" prefHeight="26.0" prefWidth="120.0" text="Reject Claim " />
-      <Button layoutX="499.0" layoutY="236.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Label alignment="CENTER" layoutX="185.0" layoutY="38.0" prefHeight="18.0" prefWidth="86.0" text="Select Claim" />
+      <ComboBox fx:id="selectClaimCB" layoutX="285.0" layoutY="35.0" prefWidth="150.0" />
+      <Label alignment="CENTER" layoutX="156.0" layoutY="88.0" prefHeight="18.0" prefWidth="94.0" text="Claim Details" />
+      <TextArea fx:id="claimDetailsTA" layoutX="264.0" layoutY="73.0" prefHeight="67.0" prefWidth="214.0" />
+      <Button layoutX="219.0" layoutY="163.0" mnemonicParsing="false" onAction="#approveClaimOnAction" prefHeight="26.0" prefWidth="120.0" text="Approve Claim" />
+      <Button layoutX="225.0" layoutY="202.0" mnemonicParsing="false" onAction="#rejectClaimOnAction" prefHeight="26.0" prefWidth="120.0" text="Reject Claim " />
+      <Button layoutX="165.0" layoutY="228.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

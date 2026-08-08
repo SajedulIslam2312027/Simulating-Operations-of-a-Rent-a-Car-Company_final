@@ -5,11 +5,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class U4g5_LeaveApprovalController {
+    @javafx.fxml.FXML
+    private TextArea leaveRequestTA;
+    @javafx.fxml.FXML
+    private TextField rejectionReasonTF;
+
     @javafx.fxml.FXML
     public void approveButtonOnAction(ActionEvent actionEvent) throws IOException {
         goNext(actionEvent);

@@ -6,14 +6,13 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g4_CustomerFeedbackController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="305.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g4_CustomerFeedbackController">
    <children>
-      <Label alignment="CENTER" layoutX="22.0" layoutY="38.0" prefHeight="18.0" prefWidth="105.0" text="Select Customer" />
-      <ComboBox fx:id="customerCB" layoutX="176.0" layoutY="35.0" prefWidth="150.0" />
-      <Label alignment="CENTER" layoutX="34.0" layoutY="102.0" prefHeight="18.0" prefWidth="105.0" text="Feedback Details" />
-      <TextArea fx:id="feedbackDetailsTA" layoutX="160.0" layoutY="100.0" prefHeight="74.0" prefWidth="248.0" />
-      <Button layoutX="61.0" layoutY="209.0" mnemonicParsing="false" onAction="#nextButtonOnAction" prefHeight="26.0" prefWidth="120.0" text="Next" />
-      <Button layoutX="370.0" layoutY="210.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Label alignment="CENTER" layoutX="140.0" layoutY="37.0" prefHeight="18.0" prefWidth="105.0" text="Select Customer" />
+      <ComboBox fx:id="customerCB" layoutX="257.0" layoutY="34.0" prefWidth="150.0" />
+      <Label alignment="CENTER" layoutX="128.0" layoutY="101.0" prefHeight="18.0" prefWidth="105.0" text="Feedback Details" />
+      <TextArea fx:id="feedbackDetailsTA" layoutX="246.0" layoutY="91.0" prefHeight="58.0" prefWidth="206.0" />
+      <Button layoutX="301.0" layoutY="195.0" mnemonicParsing="false" onAction="#nextButtonOnAction" prefHeight="26.0" prefWidth="120.0" text="Next" />
+      <Button layoutX="193.0" layoutY="196.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

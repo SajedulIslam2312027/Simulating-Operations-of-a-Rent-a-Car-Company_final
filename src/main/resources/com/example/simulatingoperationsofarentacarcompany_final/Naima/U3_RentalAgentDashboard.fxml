@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="484.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U3_RentalAgentDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
@@ -36,22 +35,22 @@
    <left>
       <VBox prefHeight="458.0" prefWidth="102.0" BorderPane.alignment="CENTER">
          <children>
-            <Button mnemonicParsing="false" onAction="#processReturnOnAction" prefHeight="54.0" prefWidth="106.0" text="Process Return" />
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#fileComplaintOnAction" prefHeight="53.0" prefWidth="106.0" text="File Complaint" />
-            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#validatePromoOnAction" prefHeight="47.0" prefWidth="106.0" text="Validate Promo" />
-            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#shiftScheduleOnAction" prefHeight="50.0" prefWidth="106.0" text="Shift Schedule" />
-            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="89.0" mnemonicParsing="false" onAction="#inspectVehicleOnAction" prefHeight="54.0" prefWidth="165.0" text="Inspect Vehicle Condition" wrapText="true" />
-            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#rentalAgreementOnAction" prefHeight="54.0" prefWidth="111.0" text="Generate Rental Agreement" wrapText="true" />
-            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#recordLateFeeOnAction" prefHeight="51.0" prefWidth="110.0" text="Record Late Fee" />
-            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="168.0" mnemonicParsing="false" onAction="#verifyLicenseOnAction" prefHeight="50.0" prefWidth="107.0" text="Verify Customer Licence" wrapText="true" />
+            <Button mnemonicParsing="false" onAction="#processReturnButtonOnAction" prefHeight="54.0" prefWidth="106.0" text="Process Return" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#fileComplaintButtonOnAction" prefHeight="53.0" prefWidth="106.0" text="File Complaint" />
+            <Button layoutX="10.0" layoutY="36.0" mnemonicParsing="false" onAction="#validatePromoButtonOnAction" prefHeight="47.0" prefWidth="106.0" text="Validate Promo" />
+            <Button layoutX="10.0" layoutY="63.0" mnemonicParsing="false" onAction="#customerRecordsButtonOnAction" prefHeight="44.0" prefWidth="119.0" text="Customer Records" textAlignment="CENTER" wrapText="true" />
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="89.0" mnemonicParsing="false" onAction="#vehicleConditionButtonOnAction" prefHeight="54.0" prefWidth="165.0" text=" Vehicle Condition" textAlignment="CENTER" wrapText="true" />
+            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="116.0" mnemonicParsing="false" onAction="#rentalAgreementButtonOnAction" prefHeight="54.0" prefWidth="111.0" text=" Rental Agreement" textAlignment="CENTER" wrapText="true" />
+            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="142.0" mnemonicParsing="false" onAction="#recordLateFeeButtonOnAction" prefHeight="51.0" prefWidth="110.0" text="Record Late Fee" />
+            <Button contentDisplay="CENTER" layoutX="10.0" layoutY="168.0" mnemonicParsing="false" onAction="#verifyLicenseButtonOnAction" prefHeight="50.0" prefWidth="107.0" text="Verify Customer Licence" wrapText="true" />
             <Button layoutX="10.0" layoutY="195.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="46.0" prefWidth="107.0" text="Logout" />
          </children>
       </VBox>
    </left>
    <center>
-      <AnchorPane prefHeight="402.0" prefWidth="500.0" style="-fx-background-color: teal;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="402.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="148.0" prefHeight="46.0" prefWidth="353.0" style="-fx-background-color: white;" text="   Rental Agent Dashboard">
+            <Label fx:id="rentalAgentDashboardLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="89.0" layoutY="148.0" prefHeight="46.0" prefWidth="353.0" style="-fx-background-color: white;" text="   Rental Agent Dashboard">
                <font>
                   <Font size="13.0" />
                </font>
@@ -60,6 +59,6 @@
       </AnchorPane>
    </center>
    <bottom>
-      <Label fx:id="statusLable" alignment="CENTER" prefHeight="18.0" prefWidth="637.0" text="Status: Ready" BorderPane.alignment="CENTER" />
+      <Label fx:id="statusLable" alignment="CENTER" prefHeight="18.0" prefWidth="637.0" text="Status: Ready" visible="false" BorderPane.alignment="CENTER" />
    </bottom>
 </BorderPane>
