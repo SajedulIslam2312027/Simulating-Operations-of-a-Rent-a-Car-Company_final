@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public class U4g1_PerformanceDashboardController {
+public class U4g1_PerformanceReportController {
     @javafx.fxml.FXML
     private ComboBox periodCB;
     @javafx.fxml.FXML

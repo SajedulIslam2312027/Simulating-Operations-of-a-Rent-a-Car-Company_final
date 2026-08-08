@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4_BranchManagerDashboardController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4_BranchManagerDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -40,14 +40,14 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" onAction="#PerformanceReportOnAction" prefHeight="57.0" prefWidth="144.0" text="Performance Report" />
-            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#ManageInventory" prefHeight="57.0" prefWidth="144.0" text="Manage Inventory" />
-            <Button layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onAction="#approveLeaveOnAction" prefHeight="57.0" prefWidth="144.0" text="Approve Leave" />
-            <Button layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onAction="#financialSummaryOnAction" prefHeight="57.0" prefWidth="144.0" text="Financial Summary" />
-            <Button layoutX="10.0" layoutY="213.0" mnemonicParsing="false" onAction="#assignShiftsOnAction" prefHeight="57.0" prefWidth="144.0" text="Assign Shifts" />
-            <Button layoutX="10.0" layoutY="271.0" mnemonicParsing="false" onAction="#maintenanceStatusOnAction" prefHeight="57.0" prefWidth="144.0" text="Track Maintenance" />
-            <Button layoutX="10.0" layoutY="328.0" mnemonicParsing="false" onAction="#customerFeedbackOnAction" prefHeight="57.0" prefWidth="144.0" text="Customer Feedback" />
-            <Button layoutX="10.0" layoutY="386.0" mnemonicParsing="false" onAction="#monthlyExpenseOnAction" prefHeight="57.0" prefWidth="144.0" text="Monthly Expence" />
+            <Button mnemonicParsing="false" onAction="#PerformanceReportButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Performance Report" />
+            <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#shiftScheduleButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Shift Schedule" />
+            <Button layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onAction="#discountApprovalButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Discount Approval" />
+            <Button layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onAction="#customerFeedbackButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Customer Feedback" />
+            <Button layoutX="10.0" layoutY="213.0" mnemonicParsing="false" onAction="#leaveApprovalButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Leave Approval" />
+            <Button layoutX="10.0" layoutY="271.0" mnemonicParsing="false" onAction="#insuranceClaimButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Insurance Claim" />
+            <Button layoutX="10.0" layoutY="328.0" mnemonicParsing="false" onAction="#revenueReportButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Revenue Report" />
+            <Button layoutX="10.0" layoutY="386.0" mnemonicParsing="false" onAction="#announcementButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Announcement" />
             <Button layoutX="10.0" layoutY="428.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Logout" />
          </children>
       </VBox>

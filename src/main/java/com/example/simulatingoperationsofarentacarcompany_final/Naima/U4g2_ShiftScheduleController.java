@@ -29,7 +29,7 @@ public class U4g2_ShiftScheduleController {
     }
     @javafx.fxml.FXML
     public void backButtonOnAction(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g1_PerformanceDashboard.fxml"));
+        FXMLLoader loader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g1_PerformanceReport.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(loader.load()));
         stage.show();

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g3_DiscountApprovalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g3_DiscountApprovalController">
    <children>
       <Label alignment="CENTER" layoutX="131.0" layoutY="45.0" prefHeight="18.0" prefWidth="108.0" text="Discount Request" />
       <TextArea fx:id="requestDetailsTA" editable="false" layoutX="251.0" layoutY="23.0" prefHeight="82.0" prefWidth="218.0" />
