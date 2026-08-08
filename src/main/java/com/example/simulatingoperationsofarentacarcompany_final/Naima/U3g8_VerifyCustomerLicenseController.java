@@ -22,6 +22,7 @@ public class U3g8_VerifyCustomerLicenseController {
     private DatePicker expiryDatePicker;
     @javafx.fxml.FXML
     public void verifyLicenseOnAction(ActionEvent actionEvent) {
+
         System.out.println(" License Verified.");
     }
     @javafx.fxml.FXML

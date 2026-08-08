@@ -6,14 +6,13 @@
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g7_RevenueReportController">
    <children>
-      <Label alignment="CENTER" layoutX="31.0" layoutY="42.0" prefHeight="26.0" prefWidth="110.0" text="Select Month" />
-      <ComboBox fx:id="monthCB" layoutX="241.0" layoutY="43.0" prefWidth="150.0" />
-      <Button layoutX="35.0" layoutY="116.0" mnemonicParsing="false" onAction="#generateButtonOnAction" prefHeight="26.0" prefWidth="88.0" text="Generate" />
+      <Label alignment="CENTER" layoutX="141.0" layoutY="54.0" prefHeight="26.0" prefWidth="110.0" text="Select Month" />
+      <ComboBox fx:id="monthCB" layoutX="283.0" layoutY="55.0" prefWidth="150.0" />
+      <Button layoutX="141.0" layoutY="115.0" mnemonicParsing="false" onAction="#generateButtonOnAction" prefHeight="26.0" prefWidth="88.0" text="Generate" />
       <TextArea layoutX="234.0" layoutY="99.0" prefHeight="59.0" prefWidth="200.0" />
-      <Button layoutX="448.0" layoutY="187.0" mnemonicParsing="false" text="Next" />
-      <Button layoutX="53.0" layoutY="213.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Button layoutX="358.0" layoutY="200.0" mnemonicParsing="false" text="Next" />
+      <Button layoutX="165.0" layoutY="213.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

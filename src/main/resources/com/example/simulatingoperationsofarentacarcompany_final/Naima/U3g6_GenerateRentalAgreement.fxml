@@ -14,11 +14,11 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="customerIdTF" layoutX="25.0" layoutY="68.0" promptText="Customer ID" />
+      <TextField fx:id="customerIdTF" layoutX="147.0" layoutY="68.0" promptText="Customer ID" />
       <TextField fx:id="vehicleRegNoTF" layoutX="375.0" layoutY="68.0" promptText="Vehicle Reg No" />
-      <DatePicker fx:id="startDatePicker" layoutX="13.0" layoutY="127.0" promptText="Start Date" />
+      <DatePicker fx:id="startDatePicker" layoutX="134.0" layoutY="127.0" promptText="Start Date" />
       <DatePicker fx:id="EndDatePicker" layoutX="363.0" layoutY="127.0" promptText="End Date" />
       <Button alignment="CENTER" layoutX="222.0" layoutY="206.0" mnemonicParsing="false" onAction="#generateOnAction" text="Generate Agreement" />
-      <Button layoutX="34.0" layoutY="292.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Button layoutX="181.0" layoutY="276.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

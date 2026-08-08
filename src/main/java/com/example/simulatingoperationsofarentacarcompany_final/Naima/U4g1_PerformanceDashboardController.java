@@ -2,7 +2,6 @@ package com.example.simulatingoperationsofarentacarcompany_final.Naima;
 
 import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -11,7 +10,7 @@ import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.EventObject;
+
 
 public class U4g1_PerformanceDashboardController {
     @javafx.fxml.FXML

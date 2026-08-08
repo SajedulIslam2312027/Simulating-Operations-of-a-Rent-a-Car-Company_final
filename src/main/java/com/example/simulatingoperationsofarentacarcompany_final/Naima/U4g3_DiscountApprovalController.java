@@ -13,6 +13,11 @@ import java.io.IOException;
 
 public class U4g3_DiscountApprovalController {
     @javafx.fxml.FXML
+    private TextField rejectionreasonTF;
+    @javafx.fxml.FXML
+    private TextArea requestDetailsTA;
+
+    @javafx.fxml.FXML
     public void approveButtonOnAction(ActionEvent actionEvent) throws IOException {
         goNext(actionEvent);
     }

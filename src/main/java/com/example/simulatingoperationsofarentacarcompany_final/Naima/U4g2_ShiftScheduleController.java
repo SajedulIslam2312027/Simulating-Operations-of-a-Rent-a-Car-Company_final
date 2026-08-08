@@ -12,8 +12,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class U4g2_ShiftScheduleController {
+    @javafx.fxml.FXML
     public ComboBox staffCB;
+    @javafx.fxml.FXML
     public TextField startTimeTF;
+    @javafx.fxml.FXML
     public TextField endTimeTF;
     @javafx.fxml.FXML
     public void assignShiftButtonOnAction(ActionEvent actionEvent) throws IOException {

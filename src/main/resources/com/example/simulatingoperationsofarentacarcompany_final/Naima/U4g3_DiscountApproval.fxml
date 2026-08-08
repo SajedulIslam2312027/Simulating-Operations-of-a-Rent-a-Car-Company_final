@@ -9,12 +9,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4g3_DiscountApprovalController">
    <children>
-      <Label alignment="CENTER" layoutX="33.0" layoutY="34.0" prefHeight="18.0" prefWidth="108.0" text="Discount Request" />
-      <TextArea fx:id="requestDetailsTA" editable="false" layoutX="206.0" layoutY="23.0" prefHeight="93.0" prefWidth="263.0" />
-      <Label alignment="CENTER" layoutX="33.0" layoutY="138.0" prefHeight="18.0" prefWidth="108.0" text="Rejection Reasons" />
-      <TextField fx:id="rejectionreasonTF" layoutX="206.0" layoutY="135.0" />
-      <Button layoutX="44.0" layoutY="225.0" mnemonicParsing="false" onAction="#approveButtonOnAction" prefHeight="26.0" prefWidth="108.0" text="Approve" />
-      <Button layoutX="248.0" layoutY="225.0" mnemonicParsing="false" onAction="#rejectButtonOnAction" prefHeight="26.0" prefWidth="108.0" text="Reject" />
-      <Button layoutX="61.0" layoutY="333.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
+      <Label alignment="CENTER" layoutX="131.0" layoutY="45.0" prefHeight="18.0" prefWidth="108.0" text="Discount Request" />
+      <TextArea fx:id="requestDetailsTA" editable="false" layoutX="251.0" layoutY="23.0" prefHeight="82.0" prefWidth="218.0" />
+      <Label alignment="CENTER" layoutX="131.0" layoutY="128.0" prefHeight="18.0" prefWidth="108.0" text="Rejection Reasons" />
+      <TextField fx:id="rejectionreasonTF" layoutX="264.0" layoutY="125.0" />
+      <Button layoutX="197.0" layoutY="192.0" mnemonicParsing="false" onAction="#approveButtonOnAction" prefHeight="26.0" prefWidth="108.0" text="Approve" />
+      <Button layoutX="203.0" layoutY="235.0" mnemonicParsing="false" onAction="#rejectButtonOnAction" prefHeight="26.0" prefWidth="108.0" text="Reject" />
+      <Button layoutX="156.0" layoutY="300.0" mnemonicParsing="false" onAction="#backButtonOnAction" text="Back" />
    </children>
 </AnchorPane>

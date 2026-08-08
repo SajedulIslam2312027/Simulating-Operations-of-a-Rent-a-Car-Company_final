@@ -5,11 +5,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class U4g8_AnnouncementController {
+    @javafx.fxml.FXML
+    private TextArea messageBodyTA;
+    @javafx.fxml.FXML
+    private TextField titleTF;
+
     @javafx.fxml.FXML
     public void publishButtonOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g1_PerformanceDashboard.fxml"));

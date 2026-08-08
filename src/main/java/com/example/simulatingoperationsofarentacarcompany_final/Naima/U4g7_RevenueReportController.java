@@ -5,11 +5,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class U4g7_RevenueReportController {
+    @javafx.fxml.FXML
+    private ComboBox monthCB;
+
     @javafx.fxml.FXML
     public void generateButtonOnAction(ActionEvent actionEvent) throws IOException {
 
