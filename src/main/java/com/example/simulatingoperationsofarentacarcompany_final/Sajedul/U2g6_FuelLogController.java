@@ -1,33 +1,48 @@
 package com.example.simulatingoperationsofarentacarcompany_final.Sajedul;
 
-import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class U2g6_FuelLogController {
 
     @javafx.fxml.FXML
-    private TextField stationTF;
-    @javafx.fxml.FXML
     private TextField vehicleIdTF;
+    @javafx.fxml.FXML
+    private TextField stationTF;
     @javafx.fxml.FXML
     private TextField litresTF;
     @javafx.fxml.FXML
     private TextField costTF;
 
     @javafx.fxml.FXML
-    public void logFuelButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U2g7_DamageReportReview.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        nextStage.setTitle("Rent A Car");
-        nextStage.setScene(scene);
-        nextStage.show();
+    public void logFuelButtonOnAction(ActionEvent actionEvent) {
+
+        if (vehicleIdTF.getText().isEmpty() || stationTF.getText().isEmpty()
+                || litresTF.getText().isEmpty() || costTF.getText().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Fill up the form properly.");
+            alert.show();
+            return;
+        }
+
+        try {
+            Double.parseDouble(litresTF.getText());
+            Double.parseDouble(costTF.getText());
+        } catch (NumberFormatException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Litres and Cost must be numbers.");
+            alert.show();
+            return;
+        }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("Fuel log saved for vehicle " + vehicleIdTF.getText() + ".");
+        alert.show();
+
+        vehicleIdTF.clear();
+        stationTF.clear();
+        litresTF.clear();
+        costTF.clear();
     }
 }

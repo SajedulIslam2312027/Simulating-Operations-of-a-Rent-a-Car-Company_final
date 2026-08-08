@@ -1,34 +1,38 @@
 package com.example.simulatingoperationsofarentacarcompany_final.Sajedul;
 
-import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class U1g4_PaymentController {
 
     @javafx.fxml.FXML
     private ComboBox methodCB;
     @javafx.fxml.FXML
-    private TextField expiryTF;
-    @javafx.fxml.FXML
     private TextField cardNumberTF;
+    @javafx.fxml.FXML
+    private TextField expiryTF;
     @javafx.fxml.FXML
     private TextField cvvTF;
 
     @javafx.fxml.FXML
-    public void payButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g5_BookingManage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load());
-        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-        nextStage.setTitle("Rent A Car");
-        nextStage.setScene(scene);
-        nextStage.show();
+    public void payButtonOnAction(ActionEvent actionEvent) {
+
+        if (methodCB.getValue() == null || cardNumberTF.getText().isEmpty()
+                || expiryTF.getText().isEmpty() || cvvTF.getText().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText("Please fill in the payment method and card details.");
+            alert.show();
+            return;
+        }
+
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setContentText("Payment successful via " + methodCB.getValue() + ".");
+        alert.show();
+
+        cardNumberTF.clear();
+        expiryTF.clear();
+        cvvTF.clear();
     }
 }
