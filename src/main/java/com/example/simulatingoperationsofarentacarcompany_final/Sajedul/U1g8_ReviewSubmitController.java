@@ -1,9 +1,15 @@
 package com.example.simulatingoperationsofarentacarcompany_final.Sajedul;
 
+import com.example.simulatingoperationsofarentacarcompany_final.HelloApplication;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Alert;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class U1g8_ReviewSubmitController {
 
@@ -13,25 +19,12 @@ public class U1g8_ReviewSubmitController {
     private TextArea commentTA;
 
     @javafx.fxml.FXML
-    public void initialize() {
-        ratingCB.getItems().addAll(1, 2, 3, 4, 5);
-    }
-
-    @javafx.fxml.FXML
-    public void submitReviewButtonOnAction(ActionEvent actionEvent) {
-
-        if (ratingCB.getValue() == null || commentTA.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Please select a rating and add a comment.");
-            alert.show();
-            return;
-        }
-
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Thank you! Your review has been submitted.");
-        alert.show();
-
-        ratingCB.setValue(null);
-        commentTA.clear();
+    public void submitReviewButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Sajedul/U1g2_CarSearch.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("Rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
     }
 }

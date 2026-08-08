@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4_BranchManagerDashboardController">
+<BorderPane fx:id="dashboardBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulatingoperationsofarentacarcompany_final.Naima.U4_BranchManagerDashboardController">
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
@@ -40,7 +40,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Button mnemonicParsing="false" onAction="#PerformanceReportButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Performance Report" />
+            <Button mnemonicParsing="false" onAction="#performanceReportButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Performance Report" />
             <Button layoutX="10.0" layoutY="40.0" mnemonicParsing="false" onAction="#shiftScheduleButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Shift Schedule" />
             <Button layoutX="10.0" layoutY="98.0" mnemonicParsing="false" onAction="#discountApprovalButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Discount Approval" />
             <Button layoutX="10.0" layoutY="156.0" mnemonicParsing="false" onAction="#customerFeedbackButtonOnAction" prefHeight="57.0" prefWidth="144.0" text="Customer Feedback" />

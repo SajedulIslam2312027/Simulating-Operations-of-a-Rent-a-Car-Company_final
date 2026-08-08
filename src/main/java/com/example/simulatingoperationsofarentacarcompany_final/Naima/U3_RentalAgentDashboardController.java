@@ -73,7 +73,8 @@ public class U3_RentalAgentDashboardController {
 
     @javafx.fxml.FXML
     public void logoutButtonOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(
+                HelloApplication.class.getResource("Login.fxml"));
 
         Scene scene = new Scene(fxmlLoader.load());
 

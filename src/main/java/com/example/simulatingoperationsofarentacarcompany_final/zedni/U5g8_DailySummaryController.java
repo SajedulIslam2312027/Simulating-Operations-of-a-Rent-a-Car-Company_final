@@ -2,35 +2,21 @@ package com.example.simulatingoperationsofarentacarcompany_final.zedni;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class U5g8_DailySummaryController {
-    @FXML private TextField hoursTF;
-    @FXML private TextArea notesTA;
 
     @FXML
-    public void submitSummaryButtonOnAction(ActionEvent actionEvent) {
-        if (hoursTF.getText().isEmpty()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Please enter total hours worked.");
-            alert.show();
-            return;
-        }
-        double hours;
-        try {
-            hours = Double.parseDouble(hoursTF.getText());
-        } catch (NumberFormatException e) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Total Hours Worked must be a number.");
-            alert.show();
-            return;
-        }
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Daily summary submitted. Hours worked: " + hours);
-        alert.show();
-        hoursTF.clear();
-        notesTA.clear();
+    public void submitSummaryButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("U5g1_AssignedTasks.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("Rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
     }
 }

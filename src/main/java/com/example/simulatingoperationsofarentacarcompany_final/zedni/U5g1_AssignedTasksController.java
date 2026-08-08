@@ -2,22 +2,21 @@ package com.example.simulatingoperationsofarentacarcompany_final.zedni;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.TableView;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
 public class U5g1_AssignedTasksController {
-    @FXML private TableView<?> taskTableView;
 
     @FXML
-    public void viewTaskButtonOnAction(ActionEvent actionEvent) {
-        if (taskTableView.getSelectionModel().getSelectedItem() == null) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setContentText("Please select a task from the table.");
-            alert.show();
-            return;
-        }
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Task details loaded.");
-        alert.show();
+    public void viewTaskButtonOnAction(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("U5g2_JobStatusUpdate.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage nextStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        nextStage.setTitle("Rent A Car");
+        nextStage.setScene(scene);
+        nextStage.show();
     }
 }

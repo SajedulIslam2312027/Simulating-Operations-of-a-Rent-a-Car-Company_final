@@ -14,9 +14,21 @@ import java.io.IOException;
 
 public class U4g1_PerformanceReportController {
     @javafx.fxml.FXML
-    private ComboBox periodCB;
+    private ComboBox<String> timePeriodComboBox;
     @javafx.fxml.FXML
     private TextArea performanceIndicatorTextArea;
+
+    @javafx.fxml.FXML
+    public void initialize(){
+        timePeriodComboBox.getItems().clear();
+        timePeriodComboBox.getItems().addAll(
+                "Daily",
+                "Weekly",
+                "Monthly",
+                "Yearly"
+        );
+        }
+
     @javafx.fxml.FXML
     public void exportDashboardButtonOnAction(ActionEvent actionEvent) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Naima/U4g2_ShiftSchedule.fxml"));
@@ -27,3 +39,4 @@ public class U4g1_PerformanceReportController {
         nextStage.show();
     }
 }
+
